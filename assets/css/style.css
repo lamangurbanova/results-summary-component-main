@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:   hsl(0, 0%, 97%);
+}
+.container{
+    width: 700px;
+    height: 500px;
+    display: flex;
+}
+.resultSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    padding: 40px;
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    z-index: 10;
+}
+.title h4{
+    color: hsl(241, 100%, 89%);
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.result-value{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    background-image: linear-gradient( hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+.result-value h1{
+    font-size: 72px;
+    color: white;
+}
+.result-value span{
+    color: hsl(241, 100%, 89%);
+    opacity: 0.7;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description h2{
+    margin-bottom: 10px;
+    color: white;
+}
+.description p{
+    text-align: center;
+    color:hsl(241, 100%, 89%);
+    font-size: 16px;
+    padding: 0 20px;
+}
+.summary{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-left: -30px;
+    z-index: 1;
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+    border-bottom-right-radius: 30px ;
+    border-top-right-radius: 30px ;
+    padding: 40px 40px 40px 70px ;
+    border:  1px solid #fff;
+    box-shadow: 0px 1px rgba(255, 255, 255, 0.2);
+}
+.summary .title h4{
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+.reaction{
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(0, 100%, 97%);
+    border-radius: 10px;
+}
+.left{
+    display: flex;
+    gap: 4px;
+}
+.left .icon{
+    display: flex;
+    align-items: center;
+}
+.left p{
+    color: hsl(0, 100%, 67%);
+    font-weight: 600;
+}
+.right .percent{
+    color: hsl(224, 30%, 27%);
+    font-weight: 600;
+    font-size: 16px;
+}
+.percent + span{
+    color: hsl(224, 30%, 27%);
+    opacity: 0.7;
+    font-size: 16px;
+}
+.memory{
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(39, 100%, 97%);
+    border-radius: 10px;
+}
+.memory .left p{
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal{
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(166, 100%, 97%);
+    border-radius: 10px;
+}
+.verbal .left p{
+    color: hsl(166, 100%, 37%);
+}
+
+.visual{
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(234, 85%, 97%);
+    border-radius: 10px;
+}
+.visual .left p{
+    color: hsl(234, 85%, 45%)
+}
+.btn{
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 100;
+}
+.btn:hover{
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+@media (max-width: 768px) {
+    body{
+        align-items: flex-start;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .resultSection{
+        width: 100%;
+        border-radius:  0 0 30px 30px;
+    }
+    .summary{
+        width: 100%;
+        border-radius: 0;
+        margin-left: 0;
+        margin-top: -16px;
+        padding-top:50px;
+        padding-left: 40px;
+    }
+}
